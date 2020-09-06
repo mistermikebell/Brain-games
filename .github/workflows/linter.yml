@@ -20,4 +20,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a linter
         run: |
-          make linter
+          make lint

@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          python 3 -m pip install poetry
+          python3 -m pip install poetry
           make install
       - name: Run a linter
         run: |

@@ -17,7 +17,7 @@ def odd_check(answer, number, name):
     if answer == 'no':
         return 'Correct!'
     return "'{ans}' is wrong answer ;(. Correct answer was\
-         'no'.\nLet's try again, {name}!".format(ans=answer, name=name) 
+         'no'.\nLet's try again, {name}!".format(ans=answer, name=name)
 
 
 def game():
@@ -33,4 +33,4 @@ def game():
             print(output)
             break
         if count == 2:
-            print('Congratulations, {name}!'.format(name=name)) 
+            print('Congratulations, {name}!'.format(name=name))

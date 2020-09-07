@@ -13,11 +13,11 @@ def odd_check(answer, number, name):
         if answer == 'yes':
             return 'Correct!'
         return "'{ans}' is wrong answer ;(. Correct answer was\
-         'yes'.\nLet's try again, {name}!".format(ans=answer, name=name)
+'yes'.\nLet's try again, {name}!".format(ans=answer, name=name)
     if answer == 'no':
         return 'Correct!'
     return "'{ans}' is wrong answer ;(. Correct answer was\
-         'no'.\nLet's try again, {name}!".format(ans=answer, name=name)
+'no'.\nLet's try again, {name}!".format(ans=answer, name=name)
 
 
 def game():

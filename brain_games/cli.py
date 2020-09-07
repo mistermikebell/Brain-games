@@ -1,9 +1,6 @@
 # -*- coding:utf-8 -*-
 
-"""
-Ask users name
-Date created: 06/09/2020
-"""
+"""Ask users name."""
 
 import prompt
 

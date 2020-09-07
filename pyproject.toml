@@ -11,13 +11,13 @@ packages = [
 python = "^3.8"
 prompt = "^0.4.1"
 flake8 = "^3.8.3"
-wemake-python-styleguide = "^0.14.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.3"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"

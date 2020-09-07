@@ -1,9 +1,6 @@
 # -*- coding:utf-8 -*-
 
-"""
-Welcoming
-Date created: 06/09/2020
-"""
+"""Welcoming."""
 
 from brain_games import cli
 

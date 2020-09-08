@@ -13,3 +13,6 @@
 
 <h3>Progression game installation tutorial</h3>
 <a href="https://asciinema.org/a/2RS6E0JzxqpOntCP4piN8KEsW" target="_blank"><img src="https://asciinema.org/a/2RS6E0JzxqpOntCP4piN8KEsW.svg" /></a>
+
+<h3>Prime game installation tutorial</h3>
+<a href="https://asciinema.org/a/PKjpdqrwSzFnVuviYkoz8wX8a" target="_blank"><img src="https://asciinema.org/a/PKjpdqrwSzFnVuviYkoz8wX8a.svg" /></a>

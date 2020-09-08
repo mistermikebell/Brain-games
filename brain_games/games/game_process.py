@@ -4,11 +4,7 @@
 
 import prompt
 
-from brain_games.games import even
-
-from brain_games.games import gcd
-
-from brain_games.games import calc
+from brain_games.games import calc, even, gcd, progression
 
 
 def game(game):
@@ -20,6 +16,8 @@ def game(game):
             question, true_answer = even.process()
         elif game == "gcd":
             question, true_answer = gcd.process()
+        elif game == "progression":   
+            question, true_answer = progression.process()
         else:
             question, true_answer = calc.process()
         print('Question: ', question)

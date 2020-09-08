@@ -10,3 +10,6 @@
 
 <h3>Greatest common divisor game installation tutorial</h3>
 <a href="https://asciinema.org/a/WXnPekis6zBkhFMWK4Zwuu0QA" target="_blank"><img src="https://asciinema.org/a/WXnPekis6zBkhFMWK4Zwuu0QA.svg" /></a>
+
+<h3>Progression game installation tutorial</h3>
+<a href="https://asciinema.org/a/2RS6E0JzxqpOntCP4piN8KEsW" target="_blank"><img src="https://asciinema.org/a/2RS6E0JzxqpOntCP4piN8KEsW.svg" /></a>

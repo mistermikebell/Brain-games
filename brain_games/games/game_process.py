@@ -6,6 +6,7 @@ import prompt
 
 from brain_games.games import calc, even, gcd, progression
 
+
 def module_choosing(game):
     if game == "even":
         return even.process()
@@ -13,7 +14,8 @@ def module_choosing(game):
         return gcd.process()
     elif game == "progression":
         return progression.process()
-    return calc.process()  
+    return calc.process()
+
 
 def game(game):
     """Play a game."""

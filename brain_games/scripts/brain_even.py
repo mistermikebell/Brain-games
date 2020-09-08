@@ -2,14 +2,14 @@
 
 """Odd game."""
 
-from brain_games import odd_game
+from brain_games.games import game_process
 
 
 def main():
     """Starting odd game."""
     print('Welcome to the Brain Games!\nAnswer\
-git"yes" if number even otherwise answer "no".')
-    odd_game.game()
+ "yes" if number even otherwise answer "no".')
+    game_process.game('even')
 
 
 if __name__ == '__main__':

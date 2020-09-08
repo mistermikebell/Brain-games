@@ -7,3 +7,6 @@
 
 <h3>Calculation game installation tutorial</h3>
 <a href="https://asciinema.org/a/XnkJ2oOcT3ZlmZXnRVcCb0NFr" target="_blank"><img src="https://asciinema.org/a/XnkJ2oOcT3ZlmZXnRVcCb0NFr.svg" /></a>
+
+<h3>Greatest common divisor game installation tutorial</h3>
+<a href="https://asciinema.org/a/WXnPekis6zBkhFMWK4Zwuu0QA" target="_blank"><img src="https://asciinema.org/a/WXnPekis6zBkhFMWK4Zwuu0QA.svg" /></a>

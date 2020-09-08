@@ -6,6 +6,8 @@ import prompt
 
 from brain_games.games import even
 
+from brain_games.games import gcd
+
 from brain_games.games import calc
 
 
@@ -16,6 +18,8 @@ def game(game):
     for count in range(3):
         if game == "even":
             question, true_answer = even.process()
+        elif game == "gcd":
+            question, true_answer = gcd.process()
         else:
             question, true_answer = calc.process()
         print('Question: ', question)

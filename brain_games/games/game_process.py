@@ -4,7 +4,7 @@
 
 import prompt
 
-from brain_games.games import calc, even, gcd, progression
+from brain_games.games import calc, even, gcd, progression, prime
 
 
 def module_choosing(game):
@@ -14,6 +14,8 @@ def module_choosing(game):
         return gcd.process()
     elif game == "progression":
         return progression.process()
+    elif game == "prime":
+        return prime.process()
     return calc.process()
 
 

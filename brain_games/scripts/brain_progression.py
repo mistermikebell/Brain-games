@@ -7,7 +7,8 @@ from brain_games.games import game_process
 
 def main():
     """Starting even game."""
-    print("Welcome to the Brain Games!\nWhat number is missing in the progression?.")
+    print("Welcome to the Brain Games!\nWhat number\
+ is missing in the progression?.")
     game_process.game('progression')
 
 

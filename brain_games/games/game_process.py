@@ -6,20 +6,21 @@ import prompt
 
 from brain_games.games import calc, even, gcd, progression
 
+def module_choosing(game):
+    if game == "even":
+        return even.process()
+    elif game == "gcd":
+        return gcd.process()
+    elif game == "progression":
+        return progression.process()
+    return calc.process()  
 
 def game(game):
     """Play a game."""
     name = prompt.string('\nMay I have your name? ')
     print('Hello, {name}!\n'.format(name=name))
     for count in range(3):
-        if game == "even":
-            question, true_answer = even.process()
-        elif game == "gcd":
-            question, true_answer = gcd.process()
-        elif game == "progression":   
-            question, true_answer = progression.process()
-        else:
-            question, true_answer = calc.process()
+        question, true_answer = module_choosing(game)
         print('Question: ', question)
         user_answer = prompt.string('Your answer: ')
         if user_answer != true_answer:

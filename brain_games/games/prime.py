@@ -2,7 +2,16 @@
 
 """Check if number is prime."""
 
+from brain_games import game_logic
+
 import random
+
+
+def init_game():
+    game_name = 'prime'
+    description = 'Answer "yes" if given number is prime.\
+ Otherwise answer "no".'
+    game_logic.start(game_name, description)
 
 
 def generate_task():

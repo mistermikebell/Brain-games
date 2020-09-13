@@ -2,14 +2,12 @@
 
 """Odd game."""
 
-from brain_games.games import game_process
+from brain_games.games import progression
 
 
 def main():
-    """Starting even game."""
-    print("Welcome to the Brain Games!\nWhat number\
- is missing in the progression?.")
-    game_process.game('progression')
+    """Starting progression game."""
+    progression.init_game()
 
 
 if __name__ == '__main__':

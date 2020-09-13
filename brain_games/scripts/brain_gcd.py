@@ -2,14 +2,12 @@
 
 """Odd game."""
 
-from brain_games.games import game_process
+from brain_games.games import gcd
 
 
 def main():
-    """Starting even game."""
-    print("Welcome to the Brain Games!\nFind\
- the greatest common divisor of given numbers.")
-    game_process.game('gcd')
+    """Starting gcd game."""
+    gcd.init_game()
 
 
 if __name__ == '__main__':

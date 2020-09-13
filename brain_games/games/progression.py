@@ -2,7 +2,15 @@
 
 """Find missing number in a progression."""
 
+from brain_games import game_logic
+
 import random
+
+
+def init_game():
+    game_name = 'progression'
+    description = 'What number is missing in the progression?'
+    game_logic.start(game_name, description)
 
 
 def generate_task():

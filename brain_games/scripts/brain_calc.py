@@ -2,13 +2,12 @@
 
 """Odd game."""
 
-from brain_games.games import game_process
+from brain_games.games import calc
 
 
 def main():
     """Starting even game."""
-    print('Welcome to the Brain Games!\nWhat is the result of the expression?')
-    game_process.game('calc')
+    calc.init_game()
 
 
 if __name__ == '__main__':

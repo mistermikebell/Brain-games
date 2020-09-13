@@ -2,14 +2,12 @@
 
 """Prime game."""
 
-from brain_games.games import game_process
+from brain_games.games import prime
 
 
 def main():
     """Starting prime game."""
-    print('Welcome to the Brain Games!\nAnswer "yes" if given number\
- is prime. Otherwise answer "no".')
-    game_process.game('prime')
+    prime.init_game()
 
 
 if __name__ == '__main__':

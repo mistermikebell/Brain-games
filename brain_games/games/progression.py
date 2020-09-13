@@ -5,7 +5,7 @@
 import random
 
 
-def process():
+def generate_task():
     """Missing number in a progression function."""
     step = random.randint(1, 9)
     first_number = random.randint(1, 100)

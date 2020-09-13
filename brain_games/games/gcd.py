@@ -5,7 +5,7 @@
 import random
 
 
-def process():
+def generate_task():
     number_1 = random.randint(0, 1000)
     number_2 = random.randint(0, 1000)
     question = str(number_1) + ' ' + str(number_2)

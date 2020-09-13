@@ -1,11 +1,22 @@
 [tool.poetry]
 name = "mistermikebell_brain_games"
-version = "0.5.0"
-description = ""
-authors = ["liuxindao <jokerbell7@gmail.com>"]
+version = "0.6.0"
+description = "Set of math games. Offers a user solve simple calculation tasks"
+authors = ["Mikhail Voronin <jokerbell7@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+ "Development Status :: 3 - Alpha",
+ "Framework :: Flake8",
+ "Intended Audience :: Education",
+ "License :: Free For Educational Use",
+ "Natural Language :: English",
+ "Programming Language :: Python :: 3.8"
+]
+
+[tool.poetry.urls]
+repository = "https://github.com/mistermikebell/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.8"

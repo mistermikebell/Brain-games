@@ -5,7 +5,7 @@
 import random
 
 
-def process():
+def generate_task():
     number = random.randint(0, 1000)
     if number == 2:
         return number, 'no'

@@ -9,14 +9,14 @@ from brain_games.games import calc, even, gcd, progression, prime
 
 def module_choosing(game):
     if game == "even":
-        return even.process()
+        return even.generate_task()
     elif game == "gcd":
-        return gcd.process()
+        return gcd.generate_task()
     elif game == "progression":
-        return progression.process()
+        return progression.generate_task()
     elif game == "prime":
-        return prime.process()
-    return calc.process()
+        return prime.generate_task()
+    return calc.generate_task()
 
 
 def game(game):

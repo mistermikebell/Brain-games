@@ -4,6 +4,7 @@ python:
 
 before_install:
   - pip install poetry
+  - poetry add --dev flake8
 
 install:
   - make install

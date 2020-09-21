@@ -7,18 +7,23 @@ from brain_games import game_logic
 import random
 
 
-def init_game():
-    game_name = 'progression'
-    description = 'What number is missing in the progression?'
-    game_logic.start(game_name, description)
-
-
-def generate_task():
+def generate_progression():
     """Missing number in a progression function."""
-    step = random.randint(1, 9)
-    first_number = random.randint(1, 100)
-    progression = [str(i) for i in range(first_number, 200, step)[:10]]
-    place_number = random.randint(0, 9)
-    answer = progression[place_number]
-    progression[place_number] = ".."
-    return " ".join(progression), answer
+    STEP_LIMIT = 9
+    FIRST_NUM_LIMIT = 100
+    LAST_NUM_LIMIT = 200
+    PROGRESSION_LEN = 10
+    step = random.randint(1, STEP_LIMIT)
+    first_number = random.randint(1, FIRST_NUM_LIMIT)
+    full_progression = range(first_number, LAST_NUM_LIMIT, step)
+    progression = [str(i) for i in full_progression[:PROGRESSION_LEN]]
+    question_index = random.randint(0, step)
+    answer = progression[question_index]
+    progression[question_index] = ".."
+    question = " ".join(progression)
+    return question, answer
+
+
+def init_game():
+    DESCRIPTION = 'What number is missing in the progression?'
+    game_logic.start(generate_progression, DESCRIPTION)

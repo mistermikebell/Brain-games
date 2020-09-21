@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-"""Odd game."""
+"""Even game."""
 
 from brain_games.games import even
 

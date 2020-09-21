@@ -2,30 +2,26 @@
 
 """Run one of games."""
 
-import importlib
-
 import prompt
 
 
-def play_game(game, name):
+def play(game, user_name, rounds):
     """Play a game."""
-    for count in range(3):
-        question, true_answer = game.generate_task()
+    for count in range(rounds):
+        question, true_answer = game()
         print('Question: ', question)
         user_answer = prompt.string('Your answer: ')
         if user_answer != true_answer:
-            return print("'{user_answer}' is wrong answer ;(.\
- Correct answer was '{true_answer}'.\nLet's try again,\
- {name}!".format(user_answer=user_answer, true_answer=true_answer, name=name))
+            print("'{mistake}' is wrong answer ;(.\
+ Correct answer was '{answer}'.\nLet's try again,\
+ {name}!".format(mistake=user_answer, answer=true_answer, name=user_name))
             break
-        if count == 2:
-            print('Congratulations, {name}!'.format(name=name))
+        if count == rounds - 1:
+            print('Congratulations, {name}!'.format(name=user_name))
 
 
-def start(game_name, description):
+def start(game, description, rounds=3):
     print('Welcome to the Brain Games!', description)
-    module = '.' + game_name
-    game = importlib.import_module(module, 'brain_games.games')
-    name = prompt.string('\nMay I have your name? ')
-    print('Hello, {name}!\n'.format(name=name))
-    play_game(game, name)
+    user_name = prompt.string('\nMay I have your name? ')
+    print('Hello, {}!\n'.format(user_name))
+    play(game, user_name, rounds)

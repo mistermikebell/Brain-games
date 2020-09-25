@@ -16,7 +16,7 @@ def calculate_gcd(number_1, number_2):
     return number_1 + number_2
 
 
-def generate_gcd():
+def generate_task():
     LIMIT = 1000
     number_1 = random.randint(0, LIMIT)
     number_2 = random.randint(0, LIMIT)
@@ -27,4 +27,4 @@ def generate_gcd():
 
 def init_game():
     DESCRIPTION = 'Find the greatest common divisor of given numbers.'
-    game_logic.start(generate_gcd, DESCRIPTION)
+    game_logic.play(generate_task, DESCRIPTION)

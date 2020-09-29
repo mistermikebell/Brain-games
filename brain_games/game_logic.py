@@ -16,7 +16,7 @@ def play(game, description):
         print('Question: ', question)
         user_answer = prompt.string('Your answer: ')
         if user_answer != true_answer:
-            return print("'{user_answer}' is wrong answer ;(.\
+            print("'{user_answer}' is wrong answer ;(.\
  Correct answer was '{answer}'.\nLet's try again,\
  {name}!".format(user_answer=user_answer, answer=true_answer, name=user_name))
-    return print('Congratulations, {name}!'.format(name=user_name))
+    print('Congratulations, {name}!'.format(name=user_name))

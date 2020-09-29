@@ -8,7 +8,7 @@ import random
 
 
 def is_prime(num):
-    if num == 2 or num % 2 == 0:
+    if num <= 2 or num % 2 == 0:
         return False
     divider = 3
     while divider**2 <= num and num % divider != 0:
